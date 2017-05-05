@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html ng-app="br.pr.pt.www.lancar.notas.com.br" >
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lançar Notas</title>
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/bootstrap/angular-busy.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/angular/angular-material.min.css" >
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png?v=1"/>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body >
+        <div ng-controller="escolaController" > 
+            <input type="text" ng-model="obt"/>
+            <button ng-click="getObjeto()" value=""> GetObjeto</button>
+        </div>
+        <!--Jquery e Angular-->
+        <script language="JavaScript" type="text/javascript" src="js/lib/bootstrap/jquery-1.11.2.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/angular.js"></script>
+        <!--Dependencias do bootstrap-->
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/bootstrap.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/ui-bootstrap-tpls-1.3.3.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/bootstrap-filestyle.min.js"></script>
+        <!--Dependencias do angular-->
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/angular-locale_pt-br.js" ></script>
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/angular-route.js"></script>
+        <!--<script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/angular-animate.js"></script>-->
+        <!--<script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/angular-aria.min.js"></script>-->
+        <!--<script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/angular-material.min.js"></script>-->
+        <!--<script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/masks.js"></script>-->
+        <!--<script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/mask.js"></script>-->
+        <!--<script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/popover.js"></script>-->
+        <!--<script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/angular-busy.js"></script>-->
+<!--        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/base64_url_decode.js"></script>       
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/jwt-decode.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/jspdf.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/lib/angular/dependencias/jspdf.plugin.autotable.min.js"></script>-->
+        <!--Classe Moule-->
+        <script language="JavaScript" type="text/javascript" src="js/src/module/appModule.js"></script>
+        <!--Classe Factory-->
+        <script language="JavaScript" type="text/javascript" src="js/src/factory/factory.js"></script>
+        <!--Classe Services-->
+        <script language="JavaScript" type="text/javascript" src="js/src/service/entidade-service.js"></script>
+        <!--Ctrls-->
+        <script language="JavaScript" type="text/javascript" src="js/src/controller/escola.js"></script>
     </body>
 </html>
