@@ -13,8 +13,9 @@
     </head>
     <body >
         <div ng-controller="escolaController" > 
-            <input type="text" ng-model="obt"/>
-            <button ng-click="getObjeto()" value=""> GetObjeto</button>
+            <input type="text" ng-model="escola.descricao"/>
+            <input type="text" ng-model="escola.usuario"/>
+            <button ng-click="sendObjeto()" value=""> Enviar</button>
         </div>
         <!--Jquery e Angular-->
         <script language="JavaScript" type="text/javascript" src="js/lib/bootstrap/jquery-1.11.2.js"></script>
